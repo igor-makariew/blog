@@ -29,7 +29,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
-        'brandUrl' => ['/posts/index'],
+        'brandUrl' => ['site/index'],
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
@@ -37,7 +37,8 @@ AppAsset::register($this);
 
     if (!Yii::$app->user->isGuest) {
         $menuItems = [
-            ['label' => 'Home', 'url' => ['/posts/index']],
+//            ['label' => 'Home', 'url' => ['/posts/index']],
+            ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'New Post', 'url' => ['/site/post']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
         ];
@@ -48,8 +49,10 @@ AppAsset::register($this);
     }
 
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+//        для тестового задания закомитил
+//        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+//        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+//        $menuItems[] = ['label' => 'Temperature', 'url' => ['/site/temperature']];
     } else {
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
