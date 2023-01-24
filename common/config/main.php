@@ -15,13 +15,13 @@ return [
             'cache' => 'cache',
         ],
 
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=db-blog',
-            'username' => 'admin',
-            'password' => 'admin',
-            'charset' => 'utf8',
-        ],
+//        'db' => [
+//            'class' => 'yii\db\Connection',
+//            'dsn' => 'mysql:host=localhost;dbname=db-blog',
+//            'username' => 'admin',
+//            'password' => 'admin',
+//            'charset' => 'utf8',
+//        ],
 
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -29,8 +29,8 @@ return [
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.yandex.ru',
-                'username' => 'www.disigner@yandex.ru',
-                'password' => 'cpytbivtybyihlre',
+                'username' => '',
+                'password' => '',
                 'port' => 465,
                 'encryption' => 'ssl',
             ],

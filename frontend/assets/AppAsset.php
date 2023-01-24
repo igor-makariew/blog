@@ -13,9 +13,13 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/vuetify.min.css',
     ];
     public $js = [
-        'js/script.js'
+//        'js/script.js',
+        'js/vue.js',
+        'js/vuetify.js',
+        'js/axios.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

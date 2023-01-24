@@ -39,10 +39,10 @@ return [
 
         'urlManager' => [
             'enablePrettyUrl' => true,
+//            'enableScriptParsing' => true, // не отрабатывает при true
             'showScriptName' => false,
             'rules' => [
-                '<action:\w+>/' => 'site/<action>'
-//                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                '<action:\w+>/' => 'site/<action>',
             ],
         ],
 
