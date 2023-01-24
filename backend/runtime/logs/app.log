@@ -1,0 +1,1935 @@
+2022-10-22 09:44:18 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][ParseError] ParseError: syntax error, unexpected ';', expecting ']' in C:\OpenServer\domains\blog\backend\controllers\SiteController.php:96
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(643): class_exists('backend\\control...')
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('site')
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('login')
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 09:44:18 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    'advanced-frontend' => '0e6nf3calkvghbl2ua5996q6jqlupo7b'
+    '_identity-frontend' => '8e2616bf15e1b9ad9bbbd0d8f674ca99f5a54446dc41d1d34ce1277ff7ac0cfda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pGeN7d_YGelc4WqryIWf2xp2D-IybU9K\",2592000]\";}'
+    '_csrf-frontend' => '3690e184c00fb958f4738a90f330fe0a739b1936736cb05b98019940ac5e5cafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r4HHzjx_ELR2VMrxuHpxq4dSY9mLPqqW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; advanced-frontend=0e6nf3calkvghbl2ua5996q6jqlupo7b; _identity-frontend=8e2616bf15e1b9ad9bbbd0d8f674ca99f5a54446dc41d1d34ce1277ff7ac0cfda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pGeN7d_YGelc4WqryIWf2xp2D-IybU9K%22%2C2592000%5D%22%3B%7D; _csrf-frontend=3690e184c00fb958f4738a90f330fe0a739b1936736cb05b98019940ac5e5cafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r4HHzjx_ELR2VMrxuHpxq4dSY9mLPqqW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61546'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666421058.2277
+    'REQUEST_TIME' => 1666421058
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:06:15 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: common\models\LoginForm::getUser() in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Component.php:301
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(98): yii\base\Component->__call('getUser', Array)
+#1 [internal function]: backend\controllers\SiteController->actionLogin()
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 11:06:15 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Zw6ltUSsnuxdiocWq7R7GBPKWd1I-pfSFLN0NX4_1GQ1dNTWFe3RtRe68lqTxQsuXPMPui6_-oUl9R4NMmDkAQ=='
+    'LoginForm' => [
+        'username' => 'igor'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '177'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '64493'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666425975.8161
+    'REQUEST_TIME' => 1666425975
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:09:12 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: common\models\LoginForm::getUser() in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Component.php:301
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(98): yii\base\Component->__call('getUser', Array)
+#1 [internal function]: backend\controllers\SiteController->actionLogin()
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 11:09:11 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Zw6ltUSsnuxdiocWq7R7GBPKWd1I-pfSFLN0NX4_1GQ1dNTWFe3RtRe68lqTxQsuXPMPui6_-oUl9R4NMmDkAQ=='
+    'LoginForm' => [
+        'username' => 'igor'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '177'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '64650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666426151.8927
+    'REQUEST_TIME' => 1666426151
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:12:29 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][Error] Error: Class 'Alert' not found in C:\OpenServer\domains\blog\backend\views\layouts\blank.php:26
+Stack trace:
+#0 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent('<div class="sit...')
+#4 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(98): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#9 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#10 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2022-10-22 11:12:29 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'hJb06cOwJ-oFRynKu-lfE8G7yy9b47ooMKlKsDrRmUrW7IWKkvFos093XIaDmC8ljoKdSD2m138B7yCIdo6pLw=='
+    'LoginForm' => [
+        'username' => 'makarev'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '180'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '64668'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666426349.1113
+    'REQUEST_TIME' => 1666426349
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:14:19 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][Error] Error: Class 'Breadcrumbs' not found in C:\OpenServer\domains\blog\backend\views\layouts\blank.php:27
+Stack trace:
+#0 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent('<div class="sit...')
+#4 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(98): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#9 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#10 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2022-10-22 11:14:19 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => '-bIwEEvWNlPifT4PiH8SpA2jFyRtHYKaINprqLvMH1aryEFzGpd5CqhNS0OwDmKSQppBQwtY780RnAGQ95MvMw=='
+    'LoginForm' => [
+        'username' => 'igor'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '177'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '64760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666426459.6464
+    'REQUEST_TIME' => 1666426459
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:48:48 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][TypeError] TypeError: Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, null given, called in C:\OpenServer\domains\blog\common\models\LoginForm.php on line 60 and defined in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\User.php:256
+Stack trace:
+#0 C:\OpenServer\domains\blog\common\models\LoginForm.php(60): yii\web\User->login(NULL, 2592000)
+#1 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(89): common\models\LoginForm->login()
+#2 [internal function]: backend\controllers\SiteController->actionLogin()
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#7 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2022-10-22 11:48:48 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => '9LLICGuiETodY2im6EbiJecqDCy1z1jasCRN35OhoF-myLlrOuNeY1dTHerQN5ITqBNaS9OKNY2BYifn3_6QOg=='
+    'LoginForm' => [
+        'username' => 'igor'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '177'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '49814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666428528.1145
+    'REQUEST_TIME' => 1666428528
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 11:52:23 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\controllers\SiteController::username in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\SiteController.php(98): yii\base\Component->__get('username')
+#1 [internal function]: backend\controllers\SiteController->actionLogin()
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/login', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 11:52:23 [127.0.0.1][-][5ln29odsv8hef10ei8r6i7nns42a6puv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'zL_JZIE_EN0ZJMJ3c5gF43j6glQJxNxnFPaesOawTJOexbgH0H5fhFMUtztL6XXVN8PUM2-BsTAlsPSIqu989g=='
+    'LoginForm' => [
+        'username' => 'makarev'
+        'password' => '123'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-backend' => 'c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e\";}'
+    'advanced-backend' => '5ln29odsv8hef10ei8r6i7nns42a6puv'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/admin'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '180'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-backend=c7fe6a565bb637adf03ae7c2e50ded8f51167b242c4b9bfa3f4e7ce36f441000a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22RzqcQAOYJ0uL8qp6O9VgfEmW1Fj8L_0e%22%3B%7D; advanced-backend=5ln29odsv8hef10ei8r6i7nns42a6puv; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '49864'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666428743.266
+    'REQUEST_TIME' => 1666428743
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2022-10-22 13:23:53 [127.0.0.1][1][lkleh83adkrpp1gqevf3bp5g1dhpg6uh][error][Error] Error: Class 'backend\controllers\Yii' not found in C:\OpenServer\domains\blog\backend\controllers\PostsController.php:73
+Stack trace:
+#0 [internal function]: backend\controllers\PostsController->actionCreate()
+#1 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/create', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2022-10-22 13:23:53 [127.0.0.1][1][lkleh83adkrpp1gqevf3bp5g1dhpg6uh][info][application] $_GET = [
+    'r' => 'posts/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Wpx-w-4KZVGAUq9Ytvu2fJAoMefj23GISe9JZC0f4tAjxB2znm1IPN8NxjHTstgyoRxWjrWXGeIZqgsyTkjQgA=='
+    'Posts' => [
+        'id_category' => '4'
+        'title_post' => '10 огромных кораблей, которые не знают себе равных'
+        'text_post' => 'Размер имеет значение. Во всяком случае, когда речь заходит о корабле. Особенно о пассажирском корабле. Данное правило удваивает свою значимость, когда речь заходит о грузовом судне. Хотя, конечно, в числе абсолютных рекордсменов по габаритам есть и различные «специальные» суда, а также военные корабли.'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    'advanced-backend' => 'lkleh83adkrpp1gqevf3bp5g1dhpg6uh'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog/backend/web/index.php'
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2002'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; advanced-backend=lkleh83adkrpp1gqevf3bp5g1dhpg6uh; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '53406'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666434233.2672
+    'REQUEST_TIME' => 1666434233
+    'argv' => [
+        0 => 'r=posts%2Fcreate'
+    ]
+    'argc' => 1
+]
+2022-10-22 15:03:58 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\posts\Posts::image in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('image')
+#1 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\helpers\BaseHtml.php(2248): yii\db\BaseActiveRecord->__get('image')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\helpers\BaseHtml.php(1363): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\posts\Posts), 'image')
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\helpers\BaseHtml.php(1517): yii\helpers\BaseHtml::activeInput('file', Object(common\models\posts\Posts), 'image', Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\widgets\ActiveField.php(491): yii\helpers\BaseHtml::activeFileInput(Object(common\models\posts\Posts), 'image', Array)
+#5 C:\OpenServer\domains\blog\backend\views\posts\_form.php(28): yii\widgets\ActiveField->fileInput()
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OpenServer\\d...')
+#7 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#8 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, NULL)
+#9 C:\OpenServer\domains\blog\backend\views\posts\update.php(18): yii\base\View->render('_form', Array)
+#10 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OpenServer\\d...')
+#11 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#12 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\PostsController))
+#13 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('update', Array, Object(backend\controllers\PostsController))
+#14 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(108): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\PostsController->actionUpdate('1')
+#16 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#18 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#19 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#20 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2022-10-22 15:03:58 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '58048'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666440238.2042
+    'REQUEST_TIME' => 1666440238
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=1'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:35:22 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Cannot use object of type yii\web\UploadedFile as array in C:\OpenServer\domains\blog\backend\controllers\PostsController.php:105
+Stack trace:
+#0 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#1 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2022-10-22 17:35:22 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => 'wHEyOjHawCr7OuyKD_kNCZkK7HEBp8H-NWdzLGJkGG65KVFKQb3tR6RlheNqsGNHqD6LGFfrqZRlIjF6ATMqPg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\php885F.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxkg0tUDSsKfI1YVA'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61375'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666449322.7672
+    'REQUEST_TIME' => 1666449322
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:35:39 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\UploadedFile::extention in C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\BaseObject.php:141
+Stack trace:
+#0 C:\OpenServer\domains\blog\common\models\posts\Posts.php(82): yii\base\BaseObject->__get('extention')
+#1 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(106): common\models\posts\Posts->upload()
+#2 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#7 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2022-10-22 17:35:39 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => 'wHEyOjHawCr7OuyKD_kNCZkK7HEBp8H-NWdzLGJkGG65KVFKQb3tR6RlheNqsGNHqD6LGFfrqZRlIjF6ATMqPg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\phpC932.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxkg0tUDSsKfI1YVA'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61480'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666449339.3526
+    'REQUEST_TIME' => 1666449339
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:46:03 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:46:03 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\php4D8C.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61871'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666449963.0591
+    'REQUEST_TIME' => 1666449963
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:46:55 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:46:55 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\php1988.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61872'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450015.2806
+    'REQUEST_TIME' => 1666450015
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:47:26 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:47:26 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\php9262.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450046.2102
+    'REQUEST_TIME' => 1666450046
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:47:30 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:47:30 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\phpA138.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450050.0183
+    'REQUEST_TIME' => 1666450050
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:47:42 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:47:42 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\phpD0F4.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450062.2341
+    'REQUEST_TIME' => 1666450062
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:48:23 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:48:23 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => '1QnKaRfXA3BDScxmbKLLsXamFf9s53-ZzyLUOd2XHlKsUakZZ7AuHRwWpQ8J66X_R5JyljqrF_OfZ5ZvvsAsAg=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'image' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'image' => '163757.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\OpenServer\\userdata\\php_upload\\php7207.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85309'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMr4bk3b5526aWjj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '61948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450103.4653
+    'REQUEST_TIME' => 1666450103
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:50:52 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:50:52 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => 'tOlzxa2h9GM3zRm91fSSzxsmsOA7EHhKjAh3LA62YEvNsRC13cbZDmiScNSwvfyBKhLXiW1cECDcTTV6beFSGw=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'file' => '163757.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => 'C:\\OpenServer\\userdata\\php_upload\\phpB64B.tmp'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85307'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt69nhvYACzvpwVfK'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '62108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450252.0107
+    'REQUEST_TIME' => 1666450252
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
+2022-10-22 17:54:09 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][error][Error] Error: Call to a member function saveAs() on null in C:\OpenServer\domains\blog\common\models\posts\Posts.php:89
+Stack trace:
+#0 C:\OpenServer\domains\blog\backend\controllers\PostsController.php(107): common\models\posts\Posts->upload()
+#1 [internal function]: backend\controllers\PostsController->actionUpdate('6')
+#2 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('posts/update', Array)
+#6 C:\OpenServer\domains\blog\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\blog\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-10-22 17:54:09 [127.0.0.1][1][q1p5an8shqvi3oci1tgui2517kg2h7m3][info][application] $_GET = [
+    'r' => 'posts/update'
+    'id' => '6'
+]
+
+$_POST = [
+    '_csrf-backend' => 'tOlzxa2h9GM3zRm91fSSzxsmsOA7EHhKjAh3LA62YEvNsRC13cbZDmiScNSwvfyBKhLXiW1cECDcTTV6beFSGw=='
+    'Posts' => [
+        'id_category' => '3'
+        'title_post' => 'Переднее крыло Mercedes не соответствует регламенту'
+        'text_post' => 'Команда Mercedes привезла в Остин модернизированное переднее крыло для W13, правда, в единственном экземпляре. Однако использовать его в гонках раньше Гран При Мексики не получится, причём в конструкцию придётся внести определённые изменения.
+
+О новом крыле Mercedes было известно заранее, уже в четверг у боксов команды все желающие могли рассмотреть обновлённый носовой обтекатель W13. Как пишет Auto Motor und Sport, общее внимание сразу привлекли пять новых стабилизаторов характерной формы, появившихся между двумя верхними плоскостями крыла.
+
+Они не похожи на обычные соединительные элементы, которые скрепляют эти плоскости, но напоминают маленькие крылышки, слегка развёрнутые во внешние стороны. Не надо быть экспертом, чтобы понять, что они предназначены для отклонения части воздушного потока.
+
+Технический регламент позволяет использовать специальные фиксаторы, которые служат для стабилизации плоскостей крыла, однако в случае с Mercedes эти элементы явно выполняют определённую аэродинамическую функцию.
+
+Объясняя суть новинки, Эндрю Шовлин, главный инженер Mercedes Эндрю Шовлин сказал: «Эти модернизированные элементы позволяют уменьшить прижимную силу, воздействующую на выступающую переднюю оконечность крыла, улучшают качество потока, который направляется к тормозным барабанам, что в свою очередь позволяет более эффективно контролировать область турбулентности вокруг передних колёс и далее в направлении к задней части машины. Также эти стабилизаторы повышают жёсткость двух верхних плоскостей крыла».'
+        'status_post' => '0'
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'Posts' => [
+        'name' => [
+            'file' => '163757.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => 'C:\\OpenServer\\userdata\\php_upload\\phpBB10.tmp'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 81549
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW\";}'
+    '_csrf-frontend' => 'd03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VkrjpkZUxxYPdUxqgIULxNuAscyXODyb\";}'
+    'advanced-frontend' => 'pdhd2nr8vn358eaovq61vltah7abcfcv'
+    '_identity-backend' => '8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth\",2592000]\";}'
+    '_csrf-backend' => '29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yXcppg-m__iieInN14giVLhjPEBVcW2P\";}'
+    'advanced-backend' => 'q1p5an8shqvi3oci1tgui2517kg2h7m3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85307'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt69nhvYACzvpwVfK'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-US;q=0.8,ru-RU;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8a2c5a9dd1508a8caa9cdabf24eae74b5fd0ba9ecb9796b56da707b56d55fccca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z3-CDNX79uQ63KKDSYoDqWmF-i2dGHrW%22%3B%7D; _csrf-frontend=d03e48f38715c77c9f28e8fb4b11325f1b977b077d728ad219c6e1b56ee225fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VkrjpkZUxxYPdUxqgIULxNuAscyXODyb%22%3B%7D; advanced-frontend=pdhd2nr8vn358eaovq61vltah7abcfcv; _identity-backend=8a54f3bdaa0d3d5a7b6c1fdebb73135aca59705a6de9a5919b0188a60d62aba5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22kE01dnnwYMAmtJ-IveYkG_eFBe4vfkth%22%2C2592000%5D%22%3B%7D; _csrf-backend=29cb0297eca7a277256e744fdf18aa43eb8fa8e8192839a0039d916ec094a68da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yXcppg-m__iieInN14giVLhjPEBVcW2P%22%3B%7D; advanced-backend=q1p5an8shqvi3oci1tgui2517kg2h7m3'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.7\\bin;c:\\openserver\\modules\\redis\\Redis-5.0;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\SKYNET\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\SKYNET\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\SKYNET\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\OpenServer\\modules\\php\\PHP_7.3;C:\\OpenServer\\modules\\conemu\\ConEmu64;c:\\OpenServer\\userdata\\composer\\vendor\\bin\\;C:\\Users\\SKYNET\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\SKYNET\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/blog'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/blog/backend/web/index.php'
+    'REMOTE_PORT' => '62240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=posts%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=posts%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1666450449.842
+    'REQUEST_TIME' => 1666450449
+    'argv' => [
+        0 => 'r=posts%2Fupdate&id=6'
+    ]
+    'argc' => 1
+]
